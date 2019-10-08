@@ -4,7 +4,7 @@ public class Sichtbarkeiten
 {
 	private int klassenvariable = 0;
 
-	private String variable = "Ich bin eine Klassenvariable";
+	private String variable = "Text B?";
 
 	public void printKlassenvarable()
 	{
@@ -15,6 +15,17 @@ public class Sichtbarkeiten
 	{
 		klassenvariable++; // alternativ auch
 		// klassenvariable += 1; oder
-		// klassenvariable = klassenvariable + 1
+		// klassenvariable = klassenvariable + 1;
+	}
+
+	public void printVariable(String variable)
+	{
+		System.out.println(variable);
+	}
+
+	public static void main(String[] args)
+	{
+		// Aufgabe: was wird ausgegeben: Text A oder B?
+		new Sichtbarkeiten().printVariable("Text A?");
 	}
 }
